@@ -8,30 +8,16 @@ function Modal(props) {
     <>
       <div className={styles.modalBackground} />
       <div className={styles.modal}>
-        <div
-          style={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            background: 'rgba(0,0,0,0.6)',
-          }}
-        />
-        <div className={styles.Modal}>
-          <div className={styles.modalWrapper}>
-            <div className={styles.modalWrap}>
-              <div className={styles.modalDelete}>
-                <p>{text}</p>
-                <div className={styles.modalButton}>
-                  <button className={styles.cancelButton} onClick={onClose}>
-                    {cancelText}
-                  </button>
-                  <button className={styles.deleteButton} onClick={onConfirm}>
-                    {confirmText}
-                  </button>
-                </div>
-              </div>
+        <div className={styles.modalWrapper}>
+          <div className={styles.modalDelete}>
+            <p>{text}</p>
+            <div className={styles.modalButton}>
+              <button className={styles.cancelButton} onClick={onClose}>
+                {cancelText}
+              </button>
+              <button className={styles.deleteButton} onClick={onConfirm}>
+                {confirmText}
+              </button>
             </div>
           </div>
         </div>
