@@ -38,7 +38,7 @@ function Post() {
         token: token,
         'Content-type': 'application/json',
       },
-    })y
+    })
       .then(res => res.status)
       .then(res => {
         if (res == 404) {
