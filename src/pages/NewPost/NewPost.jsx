@@ -28,8 +28,8 @@ function NewPost() {
       });
   }, []);
 
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
+  const handleSubmit = e => {
+    e.preventDefault();
     const body = {
       ...selectOption,
       title: titleValue,

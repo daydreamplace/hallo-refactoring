@@ -15,7 +15,7 @@ import Theme from './Theme';
 
 const App = () => {
   return (
-    <ThemeProvider theme={Theme}>
+    <>
       <GlobalStyle />
       <Header />
       <Routes>
@@ -29,7 +29,7 @@ const App = () => {
         <Route path="/post/:postId" element={<Post />} />
       </Routes>
       <Footer />
-    </ThemeProvider>
+    </>
   );
 };
 
