@@ -1,10 +1,9 @@
+import styled from 'styled-components';
 import Slider from 'react-slick';
-
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import Slide1 from '../../assets/images/slide1.png';
 import Slide2 from '../../assets/images/slide2.png';
-import styles from './Banner.module.scss';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const Banner = () => {
   const settings = {
@@ -20,27 +19,39 @@ const Banner = () => {
   };
 
   return (
-    <Slider {...settings}>
-      <div>
-        <h3>
-          <img
-            src={Slide1}
-            alt="#!"
-            style={{ maxWidth: '100vw', height: 'auto', marginBottom: '15px' }}
-          />
-        </h3>
-      </div>
-      <div>
-        <h3>
-          <img
-            src={Slide2}
-            alt="#!"
-            style={{ maxWidth: '100vw', height: 'auto', marginBottom: '15px' }}
-          />
-        </h3>
-      </div>
-    </Slider>
+    <BannerContainer>
+      <Slider {...settings}>
+        <div>
+          <h3>
+            <img
+              src={Slide1}
+              alt="#!"
+              style={{
+                maxWidth: '100vw',
+                height: 'auto',
+                marginBottom: '15px',
+              }}
+            />
+          </h3>
+        </div>
+        <div>
+          <h3>
+            <img
+              src={Slide2}
+              alt="#!"
+              style={{
+                maxWidth: '100vw',
+                height: 'auto',
+                marginBottom: '15px',
+              }}
+            />
+          </h3>
+        </div>
+      </Slider>
+    </BannerContainer>
   );
 };
 
 export default Banner;
+
+const BannerContainer = styled.div``;

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Banner from '../../components/Banner/Banner';
-import BannerContainer from '../../components/Banner/BannerContainer';
+
 import PostCardList from '../../components/PostCardList/PostCardList';
 import PostCardListCategory from '../../components/PostCardList/PostCardListCategory';
 import PostCardListContainer from '../../components/PostCardList/PostCardListContainer';
@@ -123,9 +123,7 @@ const Home = () => {
 
   return (
     <div className={styles.container}>
-      <BannerContainer>
-        <Banner />
-      </BannerContainer>
+      <Banner />
       <SkillListContainer>
         <SkillListCategory
           skillsCategoryOption={skillsCategoryOption}
