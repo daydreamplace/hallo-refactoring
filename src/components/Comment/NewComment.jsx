@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import styles from './NewComment.module.scss';
+import { useState } from 'react';
 import Modal from '../Modal/Modal';
+import styles from './NewComment.module.scss';
 
 const NewComment = ({
   id,

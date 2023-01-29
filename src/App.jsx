@@ -17,7 +17,7 @@ const App = () => {
   return (
     <>
       <GlobalStyle />
-      {/* <Header /> */}
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -28,7 +28,7 @@ const App = () => {
         <Route path="/agreement" element={<Agreement />} />
         <Route path="/post/:postId" element={<Post />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

@@ -1,8 +1,7 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useState, useCallback } from 'react';
-import css from './Signup.module.scss';
+import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/images/logo2.png';
+import css from './Signup.module.scss';
 
 const Signup = () => {
   //닉네임, 이메일,비밀번호, 비밀번호 확인 현재값

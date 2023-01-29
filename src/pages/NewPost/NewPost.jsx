@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import './NewPost.scss';
+import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import NewPostSelect from './NewPostSelect';
+import './NewPost.scss';
 
 const NewPost = () => {
   const [titleValue, setTitleValue] = useState('');

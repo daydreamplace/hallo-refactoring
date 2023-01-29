@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Banner from '../../components/Banner/Banner';
-import BannerContainer from '../../components/Banner/BannerContainer';
 import PostCardList from '../../components/PostCardList/PostCardList';
 import PostCardListCategory from '../../components/PostCardList/PostCardListCategory';
 import PostCardListContainer from '../../components/PostCardList/PostCardListContainer';
@@ -9,12 +8,10 @@ import SkillListCategory from '../../components/SkillList/SkillListCategory';
 import SkillListContainer from '../../components/SkillList/SkillListContainer';
 import SkillListFiltered from '../../components/SkillList/SkillListFiltered';
 import { BASE_URL } from '../../config';
-
 import styles from './Home.module.scss';
 
 const Home = () => {
   /**************** SkillsFilterContainer ****************/
-
   const [skillList, setSkillList] = useState([]);
 
   // 인기 / 프론트엔드 / 백엔드 / 모바일 / 기타 / 모두보기
@@ -123,9 +120,7 @@ const Home = () => {
 
   return (
     <div className={styles.container}>
-      <BannerContainer>
-        <Banner />
-      </BannerContainer>
+      <Banner />
       <SkillListContainer>
         <SkillListCategory
           skillsCategoryOption={skillsCategoryOption}

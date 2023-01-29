@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import NewComment from './NewComment';
-import styles from './Comment.module.scss';
-
 import profile from '../../assets/images/user_icon16.png';
+import styles from './Comment.module.scss';
 
 const LOGIN_TOKEN = 'login-token';
 

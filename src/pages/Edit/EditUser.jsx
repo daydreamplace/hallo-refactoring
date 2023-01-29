@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import './Edit.scss';
+import { useEffect, useState } from 'react';
 import Edit from './Edit';
+import './Edit.scss';
 
 const EditUser = () => {
   const [userInfo, setUser] = useState();

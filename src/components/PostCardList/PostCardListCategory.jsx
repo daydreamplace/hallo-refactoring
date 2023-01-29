@@ -1,6 +1,5 @@
 import Switch from 'react-js-switch';
 import PostCardListCategoryItem from './PostCardListCategoryItem';
-
 import Stack from '../../assets/svg/stack.svg';
 import Folder from '../../assets/svg/folder.svg';
 import Pencil from '../../assets/svg/pencil.svg';

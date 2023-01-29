@@ -1,8 +1,7 @@
 import { useNavigate } from 'react-router-dom';
-import styles from './PostCard.module.scss';
 import speechBubble from '../../assets/svg/speech-bubble.svg';
-
 import UserSummary from '../UserSummary/UserSummary';
+import styles from './PostCard.module.scss';
 
 const PostCard = props => {
   const navigate = useNavigate();
