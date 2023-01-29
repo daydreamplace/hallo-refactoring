@@ -1,11 +1,10 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import css from './Login.module.scss';
+import { useNavigate } from 'react-router-dom';
 import logo from '../../assets/images/logo2.png';
 import github_icon from '../../assets/images/github_icon.png';
 import kakao_icon from '../../assets/images/kakao_icon.png';
 import google_icon from '../../assets/images/google_icon.png';
+import css from './Login.module.scss';
 
 const Login = () => {
   const goToSignup = () => {

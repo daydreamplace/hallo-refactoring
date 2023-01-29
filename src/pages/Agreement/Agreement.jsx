@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
-import css from './Agreement.module.scss';
 import logo from '../../assets/images/logo2.png';
 import nexticon from '../../assets/images/nexticon.png';
 import Modal from './Modal';
+import css from './Agreement.module.scss';
 
 const Agreement = () => {
   const navigate = useNavigate();

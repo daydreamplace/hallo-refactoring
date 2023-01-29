@@ -1,5 +1,5 @@
-import styles from './SkillListCategory.module.scss';
 import SkillListCategoryItem from './SkillListCategoryItem';
+import styles from './SkillListCategory.module.scss';
 
 const SKILLS_CATEGORY_OPTION_POPULAR = '인기';
 const SKILLS_CATEGORY_OPTION_FRONTEND = '프론트엔드';

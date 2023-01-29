@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import styles from './Post.module.scss';
 import Comment from '../../components/Comment/Comment';
 import Modal from '../../components/Modal/Modal';
-
 import profile from '../../assets/images/user_icon16.png';
 import arrow from '../../assets/svg/arrow.svg';
+import styles from './Post.module.scss';
 
 const LOGIN_TOKEN = 'login-token';
 

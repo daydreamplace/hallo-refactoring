@@ -1,5 +1,4 @@
 import PostCard from '../PostCard/PostCard';
-
 import styles from './PostCardList.module.scss';
 
 const CATEGORY_OPTION_ALL = '전체';

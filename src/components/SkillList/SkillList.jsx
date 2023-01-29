@@ -1,6 +1,5 @@
-import styles from './SkillList.module.scss';
-
 import Skill from '../Skill/Skill';
+import styles from './SkillList.module.scss';
 
 const SkillList = props => {
   const skillList = props.data;

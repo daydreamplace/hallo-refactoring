@@ -1,6 +1,5 @@
-import styles from './SkillFiltered.module.scss';
-
 import Close from '../../assets/svg/close.svg';
+import styles from './SkillFiltered.module.scss';
 
 const SkillFiltered = props => {
   const skillFiltered = props.data;

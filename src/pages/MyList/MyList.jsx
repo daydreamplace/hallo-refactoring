@@ -1,10 +1,10 @@
-import React, { useCallback, useEffect, useState } from 'react';
-import PostCardListContainer from '../../components/PostCardList/PostCardListContainer';
-import styles from './MyList.module.scss';
-import Book from '../../assets/svg/book.svg';
-import PostCardList from '../../components/PostCardList/PostCardList';
+import { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
+import PostCardListContainer from '../../components/PostCardList/PostCardListContainer';
+import Book from '../../assets/svg/book.svg';
+import PostCardList from '../../components/PostCardList/PostCardList';
+import styles from './MyList.module.scss';
 import { BASE_URL } from '../../config';
 
 const LOGIN_TOKEN = 'login-token';

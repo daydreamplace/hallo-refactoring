@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-
+import logo from '../../assets/images/logo2.png';
 import css from './Header.module.scss';
 
 const Header = () => {
@@ -14,7 +14,6 @@ const Header = () => {
     { link: '/', content: '로그아웃', login: true },
   ];
 
-  // { link: '/', content: '로그아웃', login: '() =>
   const removeToken = () => {
     localStorage.removeItem('login-token');
   };
@@ -42,20 +41,19 @@ const Header = () => {
         <div className={css.headerContainer}>
           <div className={css.logoArea}>
             <Link to="./">
-              <img alt="logo" src="../../assets/images/logo2.png" />
+              <img alt="logo" src={logo} />
             </Link>
           </div>
           <div className={css.headerContentArea}>
             <div className={css.newPost} onClick={newPost}>
               새 글 쓰기
             </div>
-
             {localStorage.getItem('login-token') ? (
               <div className={css.dFlex}>
                 <span className={css.alertBell} onClick={alertDrop} />
                 <div className={alert ? css.dropAlert : css.hideNav}>
                   <p className={css.title}>
-                    읽지 않은 알림(0){' '}
+                    읽지 않은 알림(0)
                     <span
                       onClick={() => {
                         setAlert(false);
