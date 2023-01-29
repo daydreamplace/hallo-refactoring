@@ -1,6 +1,6 @@
 import styles from './UserSummary.module.scss';
 
-function UserSummary(props) {
+const UserSummary = props => {
   const nickname = props.nickname;
   const profileImage = props.profileImage;
 
@@ -10,6 +10,6 @@ function UserSummary(props) {
       <span>{nickname}</span>
     </div>
   );
-}
+};
 
 export default UserSummary;

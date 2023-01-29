@@ -3,7 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 
 import css from './Header.module.scss';
 
-function Header() {
+const Header = () => {
   // const [login, setlogin] = useState(true);
   const [dropNav, setNav] = useState(false);
   const [alert, setAlert] = useState(false);
@@ -90,6 +90,6 @@ function Header() {
       </header>
     </div>
   );
-}
+};
 
 export default Header;

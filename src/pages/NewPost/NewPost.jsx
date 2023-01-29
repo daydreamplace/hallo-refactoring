@@ -3,7 +3,7 @@ import './NewPost.scss';
 import { Link, useNavigate } from 'react-router-dom';
 import NewPostSelect from './NewPostSelect';
 
-function NewPost() {
+const NewPost = () => {
   const [titleValue, setTitleValue] = useState('');
   const [contentValue, setContentValue] = useState('');
   const [skills, setSkills] = useState([]);
@@ -89,5 +89,5 @@ function NewPost() {
       </form>
     </div>
   );
-}
+};
 export default NewPost;

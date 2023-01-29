@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Modal.module.scss';
 
-function Modal(props) {
+const Modal = props => {
   const { visible, text, cancelText, onClose, confirmText, onConfirm } = props;
   if (!visible) return null;
   return (
@@ -24,6 +24,6 @@ function Modal(props) {
       </div>
     </>
   );
-}
+};
 
 export default Modal;

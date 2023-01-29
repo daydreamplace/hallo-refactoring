@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Edit.scss';
 import Edit from './Edit';
 
-function EditUser() {
+const EditUser = () => {
   const [userInfo, setUser] = useState();
   const [userStack, setUserStack] = useState([]);
   const [stack, setStack] = useState([]);
@@ -46,6 +46,6 @@ function EditUser() {
   // }, []);
 
   return <Edit stack={stack} userInfo={userInfo} userStacks={userStack} />;
-}
+};
 
 export default EditUser;

@@ -6,7 +6,7 @@ import logo from '../../assets/images/logo2.png';
 import nexticon from '../../assets/images/nexticon.png';
 import Modal from './Modal';
 
-function Agreement() {
+const Agreement = () => {
   const navigate = useNavigate();
 
   const [allCheck, setAllCheck] = useState(false);
@@ -164,6 +164,6 @@ function Agreement() {
       </div>
     </div>
   );
-}
+};
 
 export default Agreement;

@@ -4,7 +4,7 @@ import speechBubble from '../../assets/svg/speech-bubble.svg';
 
 import UserSummary from '../UserSummary/UserSummary';
 
-function PostCard(props) {
+const PostCard = props => {
   const navigate = useNavigate();
   const post = postDataMapper(props.data);
 
@@ -45,7 +45,7 @@ function PostCard(props) {
       </div>
     </div>
   );
-}
+};
 
 function postDataMapper(data) {
   const post = {};

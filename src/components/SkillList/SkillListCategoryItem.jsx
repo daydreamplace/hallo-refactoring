@@ -1,6 +1,6 @@
 import styles from './SkillListCategoryItem.module.scss';
 
-function SkillListCategoryItem(props) {
+const SkillListCategoryItem = props => {
   return (
     <div
       className={styles.skillListCategoryItem}
@@ -10,6 +10,6 @@ function SkillListCategoryItem(props) {
       {props.name}
     </div>
   );
-}
+};
 
 export default SkillListCategoryItem;

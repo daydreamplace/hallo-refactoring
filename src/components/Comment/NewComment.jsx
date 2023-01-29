@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './NewComment.module.scss';
 import Modal from '../Modal/Modal';
 
-function NewComment({
+const NewComment = ({
   id,
   profile,
   user,
@@ -10,7 +10,7 @@ function NewComment({
   comment,
   deleteComment,
   modifyComment,
-}) {
+}) => {
   const [commentModal, setCommentModal] = useState(false);
   const [modify, setModify] = useState(false);
   const [text, setText] = useState('');
@@ -100,6 +100,6 @@ function NewComment({
       />
     </>
   );
-}
+};
 
 export default NewComment;

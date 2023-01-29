@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Edit.scss';
 
-function Edit({ userInfo, stack, userStack }) {
+const Edit = ({ userInfo, stack, userStack }) => {
   const defaultValue = userInfo;
   const [selectStack, setSelect] = useState(null);
   const [nickName, setNickName] = useState();
@@ -83,6 +83,6 @@ function Edit({ userInfo, stack, userStack }) {
       </div>
     </div>
   );
-}
+};
 
 export default Edit;

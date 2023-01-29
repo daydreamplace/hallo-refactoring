@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './CommentModal.module.scss';
 import ModalDeleteComment from './ModalDeleteComment';
 
-function CommentModal({ id, commentModal, setCommentModal, deleteComment }) {
+const CommentModal = ({ id, commentModal, setCommentModal, deleteComment }) => {
   return (
     <div>
       <div
@@ -27,6 +27,6 @@ function CommentModal({ id, commentModal, setCommentModal, deleteComment }) {
       </div>
     </div>
   );
-}
+};
 
 export default CommentModal;

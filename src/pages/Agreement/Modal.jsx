@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import css from './Modal.module.scss';
 
-function Modal({ setModal, allBtn }) {
+const Modal = ({ setModal, allBtn }) => {
   const modalClose = () => {
     setModal(false);
   };
@@ -27,7 +27,6 @@ function Modal({ setModal, allBtn }) {
           <div>
             <p className={css.title}>만 14세 이용약관</p>
             <content className={css.content}>
-              {' '}
               개인정보 보호법 제 22조, 제 39조의 3에 의해 만 14세 미만 아동의
               개인 정보를 처리하기 위해 동의를 받아야 할 때는 그 법정대리인의
               동의가 필요합니다. 만 14세 미만 어린이의 가입을 받지 않으려면 만
@@ -59,6 +58,6 @@ function Modal({ setModal, allBtn }) {
       </div>
     </div>
   );
-}
+};
 
 export default Modal;

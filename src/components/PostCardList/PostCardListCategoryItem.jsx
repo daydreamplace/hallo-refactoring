@@ -1,6 +1,6 @@
 import styles from './PostCardListCategoryItem.module.scss';
 
-function PostCardListCategoryItem(props) {
+const PostCardListCategoryItem = props => {
   return (
     <div
       className={styles.postCardListCategoryItem}
@@ -11,6 +11,6 @@ function PostCardListCategoryItem(props) {
       <span>{props.category}</span>
     </div>
   );
-}
+};
 
 export default PostCardListCategoryItem;

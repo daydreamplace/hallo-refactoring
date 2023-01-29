@@ -1,7 +1,14 @@
 import React from 'react';
 import styles from './ModalDeleteComment.module.scss';
 
-function Modal({ visible, text, cancelText, onClose, confirmText, onConfirm }) {
+const Modal = ({
+  visible,
+  text,
+  cancelText,
+  onClose,
+  confirmText,
+  onConfirm,
+}) => {
   if (!visible) return null;
   return (
     <div>
@@ -34,6 +41,6 @@ function Modal({ visible, text, cancelText, onClose, confirmText, onConfirm }) {
       </div>
     </div>
   );
-}
+};
 
 export default Modal;

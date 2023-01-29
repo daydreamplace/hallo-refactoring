@@ -9,7 +9,7 @@ import { BASE_URL } from '../../config';
 
 const LOGIN_TOKEN = 'login-token';
 
-function MyList() {
+const MyList = () => {
   const navigate = useNavigate();
   const [ref, inView] = useInView();
   const [page, setPage] = useState(1);
@@ -70,6 +70,6 @@ function MyList() {
       </PostCardListContainer>
     </div>
   );
-}
+};
 
 export default MyList;

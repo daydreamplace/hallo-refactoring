@@ -1,6 +1,6 @@
 import React from 'react';
 
-function NewPostSelect(props) {
+const NewPostSelect = props => {
   const { skills, getSelectValue } = props;
 
   const selectChange = e => {
@@ -174,6 +174,6 @@ function NewPostSelect(props) {
       </ul>
     </div>
   );
-}
+};
 
 export default NewPostSelect;

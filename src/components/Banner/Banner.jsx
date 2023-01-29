@@ -6,7 +6,7 @@ import Slide1 from '../../assets/images/slide1.png';
 import Slide2 from '../../assets/images/slide2.png';
 import styles from './Banner.module.scss';
 
-function Banner() {
+const Banner = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -41,6 +41,6 @@ function Banner() {
       </div>
     </Slider>
   );
-}
+};
 
 export default Banner;
