@@ -27,8 +27,9 @@ function NewPost() {
         setSkills(res.stacks);
       });
   }, []);
-  const handleSubmit = event => {
-    event.preventDefault();
+
+  const handleSubmit = e => {
+    e.preventDefault();
     const body = {
       ...selectOption,
       title: titleValue,
