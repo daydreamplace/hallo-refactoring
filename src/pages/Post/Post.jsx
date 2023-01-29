@@ -9,7 +9,7 @@ import arrow from '../../assets/svg/arrow.svg';
 
 const LOGIN_TOKEN = 'login-token';
 
-function Post() {
+const Post = () => {
   const navigate = useNavigate();
   const { postId } = useParams();
   const [post, setPost] = useState(null);
@@ -157,6 +157,6 @@ function Post() {
       </div>
     </div>
   );
-}
+};
 
 export default Post;

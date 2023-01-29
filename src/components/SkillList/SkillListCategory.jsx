@@ -8,7 +8,7 @@ const SKILLS_CATEGORY_OPTION_MOBILE = '모바일';
 const SKILLS_CATEGORY_OPTION_ETC = '기타';
 const SKILLS_CATEGORY_OPTION_ALL = '모두보기';
 
-function SkillListCategory(props) {
+const SkillListCategory = props => {
   return (
     <div className={styles.skillListCategory}>
       <SkillListCategoryItem
@@ -51,6 +51,6 @@ function SkillListCategory(props) {
       />
     </div>
   );
-}
+};
 
 export default SkillListCategory;

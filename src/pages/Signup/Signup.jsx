@@ -4,7 +4,7 @@ import { useState, useCallback } from 'react';
 import css from './Signup.module.scss';
 import logo from '../../assets/images/logo2.png';
 
-function Signup() {
+const Signup = () => {
   //닉네임, 이메일,비밀번호, 비밀번호 확인 현재값
   const [nickName, setNickName] = useState('');
   const [email, setEmail] = useState('');
@@ -171,6 +171,6 @@ function Signup() {
       </div>
     </div>
   );
-}
+};
 
 export default Signup;

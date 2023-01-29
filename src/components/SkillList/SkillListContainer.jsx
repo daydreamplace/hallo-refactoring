@@ -1,7 +1,7 @@
 import styles from './SkillListContainer.module.scss';
 
-function SkillListContainer(props) {
+const SkillListContainer = props => {
   return <div className={styles.skillListContainer}>{props.children}</div>;
-}
+};
 
 export default SkillListContainer;

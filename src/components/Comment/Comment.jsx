@@ -7,7 +7,7 @@ import profile from '../../assets/images/user_icon16.png';
 
 const LOGIN_TOKEN = 'login-token';
 
-function Comment() {
+const Comment = () => {
   const { postId } = useParams();
   const [userInfo, setUser] = useState();
   const [comment, setComment] = useState('');
@@ -169,6 +169,6 @@ function Comment() {
       </div>
     </div>
   );
-}
+};
 
 export default Comment;

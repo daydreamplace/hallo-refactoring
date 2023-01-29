@@ -12,7 +12,7 @@ import { BASE_URL } from '../../config';
 
 import styles from './Home.module.scss';
 
-function Home() {
+const Home = () => {
   /**************** SkillsFilterContainer ****************/
 
   const [skillList, setSkillList] = useState([]);
@@ -158,6 +158,6 @@ function Home() {
       </PostCardListContainer>
     </div>
   );
-}
+};
 
 export default Home;

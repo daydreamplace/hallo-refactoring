@@ -1,6 +1,6 @@
 import styles from './Skill.module.scss';
 
-function Skill(props) {
+const Skill = props => {
   const skill = props.data;
   const isActivated = props.isActivated;
   const handleSkillListFiltered = props.handleSkillListFiltered;
@@ -17,6 +17,6 @@ function Skill(props) {
       <span>{skill.name}</span>
     </div>
   );
-}
+};
 
 export default Skill;

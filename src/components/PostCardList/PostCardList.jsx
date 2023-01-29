@@ -6,7 +6,7 @@ const CATEGORY_OPTION_ALL = '전체';
 const CATEGORY_OPTION_PROJECT = '프로젝트';
 const CATEGORY_OPTION_STUDY = '스터디';
 
-function PostCardList(props) {
+const PostCardList = props => {
   const postCardList = props.data;
   const categoryOption = props.categoryOption;
   const switchOption = props.switchOption;
@@ -27,7 +27,7 @@ function PostCardList(props) {
         })}
     </div>
   );
-}
+};
 
 function getCondition(option) {
   if (option === CATEGORY_OPTION_ALL) return '';

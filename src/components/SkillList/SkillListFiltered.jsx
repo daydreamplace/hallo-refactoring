@@ -1,7 +1,7 @@
 import SkillFiltered from '../SkillFiltered/SkillFiltered';
 import styles from './SkillListFiltered.module.scss';
 
-function SkillListFiltered(props) {
+const SkillListFiltered = props => {
   const skillListFiltered = props.data;
   const handleSkillListFilteredRemove = props.handleSkillListFilteredRemove;
   const handleSkillListFilteredRemoveAll =
@@ -24,6 +24,6 @@ function SkillListFiltered(props) {
       )}
     </div>
   );
-}
+};
 
 export default SkillListFiltered;

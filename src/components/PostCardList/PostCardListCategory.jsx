@@ -6,7 +6,7 @@ import Folder from '../../assets/svg/folder.svg';
 import Pencil from '../../assets/svg/pencil.svg';
 import styles from './PostCardListCategory.module.scss';
 
-function PostCardListCategory(props) {
+const PostCardListCategory = props => {
   return (
     <div className={styles.postCardListCategory}>
       <div className={styles.postCardListCategoryOptionArea1}>
@@ -42,6 +42,6 @@ function PostCardListCategory(props) {
       </div>
     </div>
   );
-}
+};
 
 export default PostCardListCategory;

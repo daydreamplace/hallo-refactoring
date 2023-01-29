@@ -2,7 +2,7 @@ import styles from './SkillList.module.scss';
 
 import Skill from '../Skill/Skill';
 
-function SkillList(props) {
+const SkillList = props => {
   const skillList = props.data;
   const skillListFiltered = props.skillListFiltered;
   const handleSkillListFiltered = props.handleSkillListFiltered;
@@ -26,7 +26,7 @@ function SkillList(props) {
         })}
     </div>
   );
-}
+};
 
 function isSkillInSkillListFiltered(skillListFiltered, skill) {
   let isContained;

@@ -2,7 +2,7 @@ import styles from './SkillFiltered.module.scss';
 
 import Close from '../../assets/svg/close.svg';
 
-function SkillFiltered(props) {
+const SkillFiltered = props => {
   const skillFiltered = props.data;
   const handleSkillListFilteredRemove = props.handleSkillListFilteredRemove;
 
@@ -15,6 +15,6 @@ function SkillFiltered(props) {
       <img src={Close} alt="none" />
     </div>
   );
-}
+};
 
 export default SkillFiltered;

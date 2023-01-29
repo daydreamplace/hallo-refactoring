@@ -7,7 +7,7 @@ import github_icon from '../../assets/images/github_icon.png';
 import kakao_icon from '../../assets/images/kakao_icon.png';
 import google_icon from '../../assets/images/google_icon.png';
 
-function Login() {
+const Login = () => {
   const goToSignup = () => {
     navigate('/agreement');
   };
@@ -140,6 +140,6 @@ function Login() {
       </div>
     </div>
   );
-}
+};
 
 export default Login;
